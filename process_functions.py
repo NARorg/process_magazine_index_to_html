@@ -22,14 +22,20 @@ def count_cols(worksheet):
 def make_dict(worksheet):
   rows = count_rows(worksheet)
   cols = count_cols(worksheet)
+  headersToValues = {}
+  for column in xrange(1, cols+1):
+    print column
+  return headersToValues
 
 class TestProcessFunctions(unittest.TestCase):
-  def setUp(self):
+  @classmethod
+  def setUpClass(self):
     wb = openpyxl.load_workbook('test1973.xlsx', guess_types=True)
     self.ws = wb.active
     self.rowCount = count_rows(self.ws)
     self.colCount = count_cols(self.ws)
-  
+    self.dict = make_dict(self.ws)  
+
   def test_count_rows(self):
     self.assertEqual(129, self.rowCount)
     
@@ -40,6 +46,9 @@ class TestProcessFunctions(unittest.TestCase):
 
   def test_count_cols(self):
     self.assertEqual(11, self.colCount)
+
+  def test_make_dict(self):
+    print self.dict.keys()
 
 if __name__ == '__main__':
   unittest.main()
