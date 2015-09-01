@@ -14,7 +14,7 @@ import process_functions
 #and downloading them all (want to at least give people a challenge).
 
 wb = openpyxl.load_workbook('index.xlsx', guess_types=True)
-ws = wb.active;
+ws = wb.active
 
 rows = process_functions.count_rows(ws)
 print ws['A2250'].value
