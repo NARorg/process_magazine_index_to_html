@@ -25,12 +25,16 @@ def get_row_col(worksheet, row, col):
 def make_dict(worksheet):
   rows = count_rows(worksheet)
   cols = count_cols(worksheet)
-  headers = []
+  headers = {}
   headersToValues = {}
   for column in xrange(2, cols+1):
     header = get_row_col(worksheet, 1, column)
-    headers.append(header)
+    headers[column] = header
     headersToValues[header] = {}
+  for row in xrange(2, rows+1):
+    index = get_row_col(worksheet, row, 1)
+    for col in headers.keys():
+      print index, col:
   return headers, headersToValues
 
 class TestProcessFunctions(unittest.TestCase):
