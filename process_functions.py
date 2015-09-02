@@ -19,13 +19,19 @@ def count_cols(worksheet):
     col += 1
   return col - 1
 
+def get_row_col(worksheet, row, col):
+  return worksheet[convert_colnum_to_char(col) + str(row)].value
+
 def make_dict(worksheet):
   rows = count_rows(worksheet)
   cols = count_cols(worksheet)
+  headers = []
   headersToValues = {}
-  for column in xrange(1, cols+1):
-    print column
-  return headersToValues
+  for column in xrange(2, cols+1):
+    header = get_row_col(worksheet, 1, column)
+    headers.append(header)
+    headersToValues[header] = {}
+  return headers, headersToValues
 
 class TestProcessFunctions(unittest.TestCase):
   @classmethod
@@ -34,7 +40,7 @@ class TestProcessFunctions(unittest.TestCase):
     self.ws = wb.active
     self.rowCount = count_rows(self.ws)
     self.colCount = count_cols(self.ws)
-    self.dict = make_dict(self.ws)  
+    self.headers, self.dict = make_dict(self.ws)  
 
   def test_count_rows(self):
     self.assertEqual(129, self.rowCount)
@@ -48,7 +54,12 @@ class TestProcessFunctions(unittest.TestCase):
     self.assertEqual(11, self.colCount)
 
   def test_make_dict(self):
-    print self.dict.keys()
+    print self.dict.keys(), self.headers
+
+  def test_get_row_col(self):
+    self.assertEqual('IDX', get_row_col(self.ws, 1, 1))
+    self.assertEqual('AUTHOR', get_row_col(self.ws, 1, 2))
+    self.assertEqual('Title', get_row_col(self.ws, 1, 11))
 
 if __name__ == '__main__':
   unittest.main()
