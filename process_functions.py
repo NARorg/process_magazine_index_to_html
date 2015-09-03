@@ -96,6 +96,57 @@ goldCategoryString = """<p><h1>Columns</h1></p>
 </ul>
 """
 
+goldAuthorString = """<p><h1>Blickenstaff, Jan</h1></p>
+<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Section Highlights, in Model Rocketeer Dec 1973 Volume 15 Number 11, Page 10</a></li>
+</ul>
+<p><h1>Cole, Gary</h1></p>
+<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Roc Egglofter, in Model Rocketeer Dec 1973 Volume 15 Number 11, Page 9</a></li>
+</ul>
+<p><h1>Conner II, Paul</h1></p>
+<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Oscar Two Stage Sport Rocket, in Model Rocketeer Dec 1973 Volume 15 Number 11, Page 21</a></li>
+</ul>
+<p><h1>Diller, Elisa</h1></p>
+<li><a href="http://fake.path/1973/MR-Jan1973_V14-N1.pdf">Unearthly-MARS VII Aberdeen Proving Ground, Maryland October 14-15, 1972, in Model Rocketeer Jan 1973 Volume 14 Number 1, Page 12</a></li>
+</ul>
+<p><h1>Griffith, Patrick M.</h1></p>
+<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">R & D Summary A Polaroid Camroc System, in Model Rocketeer Dec 1973 Volume 15 Number 11, Page 11</a></li>
+</ul>
+<p><h1>Gross, Paul</h1></p>
+<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Saturn V Launcher, The, in Model Rocketeer Dec 1973 Volume 15 Number 11, Pages 14-19</a></li>
+</ul>
+<p><h1>Kuechler, Thomas</h1></p>
+<li><a href="http://fake.path/1973/MR-Jan1973_V14-N1.pdf">Technical Feature The Effect of Delayed Staging on a Multi-staged Model Rocket's Performance, in Model Rocketeer Jan 1973 Volume 14 Number 1, Pages 8-9</a></li>
+</ul>
+<p><h1>Lieber, Robert</h1></p>
+<li><a href="http://fake.path/1973/MR-Jan1973_V14-N1.pdf">New From the Manufacturers, in Model Rocketeer Jan 1973 Volume 14 Number 1, Page 13</a></li>
+</ul>
+<p><h1>Medina, Tony</h1></p>
+<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Filly Willy Flim-flam Flyer Boost & Rocket Glider for Swift & SparroWevents, in Model Rocketeer Dec 1973 Volume 15 Number 11, Pages 12-13</a></li>
+<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Filly Willy Flim-flam Flyer Boost & Rocket Glider for Swift & SparroWevents, in Model Rocketeer Dec 1973 Volume 15 Number 11, Pages 12-13</a></li>
+</ul>
+<p><h1>Newill, David</h1></p>
+<li><a href="http://fake.path/1973/MR-Jan1973_V14-N1.pdf">Model Rocket Tips (getting under-camber on wing), in Model Rocketeer Jan 1973 Volume 14 Number 1, Page 13</a></li>
+<li><a href="http://fake.path/1973/MR-Jan1973_V14-N1.pdf">Model Rocket Tips (getting under-camber on wing), in Model Rocketeer Jan 1973 Volume 14 Number 1, Page 13</a></li>
+</ul>
+<p><h1>Pearson, Ed</h1></p>
+<li><a href="http://fake.path/1973/MR-Jan1973_V14-N1.pdf">First World Model Rocket Championships-VRSAC '72, in Model Rocketeer Jan 1973 Volume 14 Number 1, Pages 6-7, 14-15</a></li>
+</ul>
+<p><h1>Sadowski, Elaine</h1></p>
+<li><a href="http://fake.path/1973/MR-Jan1973_V14-N1.pdf">Editor's Nook, in Model Rocketeer Jan 1973 Volume 14 Number 1, Page 4</a></li>
+<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Editor's Nook, in Model Rocketeer Dec 1973 Volume 15 Number 11, Page 5</a></li>
+</ul>
+<p><h1>Shenosky, Larry</h1></p>
+<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Television and Model Rocketry, in Model Rocketeer Dec 1973 Volume 15 Number 11, Page 22</a></li>
+</ul>
+<p><h1>Unknown</h1></p>
+<li><a href="http://fake.path/1973/MR-Jan1973_V14-N1.pdf">NAR In Action, in Model Rocketeer Jan 1973 Volume 14 Number 1, Page 5</a></li>
+<li><a href="http://fake.path/1973/MR-Jan1973_V14-N1.pdf">NAR News, in Model Rocketeer Jan 1973 Volume 14 Number 1, Pages 11, 14</a></li>
+</ul>
+<p><h1>Wright, Ron</h1></p>
+<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">NAR In Action, in Model Rocketeer Dec 1973 Volume 15 Number 11, Page 20</a></li>
+</ul>
+"""
+
 def count_rows(worksheet):
   row = 1
   while (worksheet['A' + str(row)].value != None):
@@ -254,13 +305,22 @@ def output_article_html(issues, issueToIndices, headersToValues):
       htmlString += '</ul>\n'
   return htmlString
 
-def collect_indices_for_category(indices, category, headerToValues):
+def collect_indices_for_arbitrary(
+    indices, arbitrary, headerToValues, arbitraryString):
   returnIndices = []
   for index in indices:
-    if headerToValues[topicString][index].encode(
-        'ascii', 'replace') == category:
+    if headerToValues[arbitraryString][index].encode(
+        'ascii', 'replace') == arbitrary:
       returnIndices.append(index)
   return returnIndices
+
+def collect_indices_for_category(indices, category, headerToValues):
+  return collect_indices_for_arbitrary(
+      indices, category, headerToValues, topicString)
+
+def collect_indices_for_author(indices, author, headerToValues):
+  return collect_indices_for_arbitrary(
+      indices, author, headerToValues, authorString)
 
 def find_issue(index, issueToIndices):
   for issue, indices in issueToIndices.iteritems():
@@ -301,6 +361,37 @@ def output_category_html(issues, issueToIndices, headersToValues):
     htmlString += '</ul>\n'
   return htmlString
 
+def output_author_html(issues, issueToIndices, headersToValues):
+  htmlString = ''
+  indices = []
+  for issue in issues:
+    indices.extend(issueToIndices[issue])
+  authors = set()
+  for index in indices:
+    authors.add(
+        headersToValues[authorString][index].encode('ascii', 'replace'))
+  authors = list(authors)
+  authors.sort()
+  for author in authors:
+    htmlString += '<p><h1>' + author + '</h1></p>\n'
+    indicesForAuthor = collect_indices_for_author(
+        indices, author, headersToValues)
+    for index in sort_indices_chronologically(
+        indicesForAuthor, headersToValues):
+      year = headersToValues[yearString][index]
+      issue = find_issue(index, issueToIndices)
+      htmlString += '<li><a href="' + globalPath + str(year) + '/' + \
+          issue + '.pdf">' + \
+          str(headersToValues[titleString][index]).encode('ascii','replace')+\
+          ', in ' + pretty_name(issue) + \
+          ', Page'
+      pageNum = str(headersToValues[pageString][index]).encode('ascii','replace')
+      if multiple_pages(pageNum):
+        htmlString += 's'
+      htmlString +=  ' ' + pageNum + '</a></li>\n'
+    htmlString += '</ul>\n'
+  return htmlString
+
 class TestProcessFunctions(unittest.TestCase):
   @classmethod
   def setUpClass(self):
@@ -324,6 +415,11 @@ class TestProcessFunctions(unittest.TestCase):
     outCategoryHtml = open('category.html', 'w')
     outCategoryHtml.write(self.categoryHtml)
     outCategoryHtml.close()
+    self.authorHtml = output_author_html(self.issuesToIndices.keys(), 
+        self.issuesToIndices, self.dict)
+    outAuthorHtml = open('author.html', 'w')
+    outAuthorHtml.write(self.authorHtml)
+    outAuthorHtml.close()
 
   def test_count_rows(self):
     self.assertEqual(129, self.rowCount)
@@ -402,6 +498,11 @@ class TestProcessFunctions(unittest.TestCase):
   def test_output_category_html(self):
     self.assertEqual(goldCategoryString,
         output_category_html(['MR-Jan1973_V14-N1', 'MR-Dec1973_V15-N11'],
+        self.issuesToIndices, self.dict))
+
+  def test_output_author_html(self):
+    self.assertEqual(goldAuthorString,
+        output_author_html(['MR-Jan1973_V14-N1', 'MR-Dec1973_V15-N11'],
         self.issuesToIndices, self.dict))
 
 if __name__ == '__main__':
