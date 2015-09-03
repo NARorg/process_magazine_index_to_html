@@ -52,225 +52,47 @@ goldArticleString = """<p><h1>1973</h1></p>
 """
 
 goldCategoryString = """<p><h1>Columns</h1></p>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Editor's Nook, by Sadowski, Elaine, Page 5</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Roc Egglofter, by Cole, Gary, Page 9</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Section Highlights, by Blickenstaff, Jan, Page 10</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">R & D Summary A Polaroid Camroc System, by Griffith, Patrick M., Page 11</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Filly Willy Flim-flam Flyer Boost & Rocket Glider for Swift & SparroWevents, by Medina, Tony, Pages 12-13</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Filly Willy Flim-flam Flyer Boost & Rocket Glider for Swift & SparroWevents, by Medina, Tony, Pages 12-13</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Saturn V Launcher, The, by Gross, Paul, Pages 14-19</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">NAR In Action, by Wright, Ron, Page 20</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Oscar Two Stage Sport Rocket, by Conner II, Paul, Page 21</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Television and Model Rocketry, by Shenosky, Larry, Page 22</a></li>
-</ul>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Editor's Nook, by Sadowski, Elaine, Page 5</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Roc Egglofter, by Cole, Gary, Page 9</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Section Highlights, by Blickenstaff, Jan, Page 10</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">R & D Summary A Polaroid Camroc System, by Griffith, Patrick M., Page 11</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Filly Willy Flim-flam Flyer Boost & Rocket Glider for Swift & SparroWevents, by Medina, Tony, Pages 12-13</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Filly Willy Flim-flam Flyer Boost & Rocket Glider for Swift & SparroWevents, by Medina, Tony, Pages 12-13</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Saturn V Launcher, The, by Gross, Paul, Pages 14-19</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">NAR In Action, by Wright, Ron, Page 20</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Oscar Two Stage Sport Rocket, by Conner II, Paul, Page 21</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Television and Model Rocketry, by Shenosky, Larry, Page 22</a></li>
-</ul>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Editor's Nook, by Sadowski, Elaine, Page 5</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Roc Egglofter, by Cole, Gary, Page 9</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Section Highlights, by Blickenstaff, Jan, Page 10</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">R & D Summary A Polaroid Camroc System, by Griffith, Patrick M., Page 11</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Filly Willy Flim-flam Flyer Boost & Rocket Glider for Swift & SparroWevents, by Medina, Tony, Pages 12-13</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Filly Willy Flim-flam Flyer Boost & Rocket Glider for Swift & SparroWevents, by Medina, Tony, Pages 12-13</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Saturn V Launcher, The, by Gross, Paul, Pages 14-19</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">NAR In Action, by Wright, Ron, Page 20</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Oscar Two Stage Sport Rocket, by Conner II, Paul, Page 21</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Television and Model Rocketry, by Shenosky, Larry, Page 22</a></li>
-</ul>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Editor's Nook, by Sadowski, Elaine, Page 5</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Roc Egglofter, by Cole, Gary, Page 9</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Section Highlights, by Blickenstaff, Jan, Page 10</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">R & D Summary A Polaroid Camroc System, by Griffith, Patrick M., Page 11</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Filly Willy Flim-flam Flyer Boost & Rocket Glider for Swift & SparroWevents, by Medina, Tony, Pages 12-13</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Filly Willy Flim-flam Flyer Boost & Rocket Glider for Swift & SparroWevents, by Medina, Tony, Pages 12-13</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Saturn V Launcher, The, by Gross, Paul, Pages 14-19</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">NAR In Action, by Wright, Ron, Page 20</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Oscar Two Stage Sport Rocket, by Conner II, Paul, Page 21</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Television and Model Rocketry, by Shenosky, Larry, Page 22</a></li>
-</ul>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Editor's Nook, by Sadowski, Elaine, Page 5</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Roc Egglofter, by Cole, Gary, Page 9</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Section Highlights, by Blickenstaff, Jan, Page 10</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">R & D Summary A Polaroid Camroc System, by Griffith, Patrick M., Page 11</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Filly Willy Flim-flam Flyer Boost & Rocket Glider for Swift & SparroWevents, by Medina, Tony, Pages 12-13</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Filly Willy Flim-flam Flyer Boost & Rocket Glider for Swift & SparroWevents, by Medina, Tony, Pages 12-13</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Saturn V Launcher, The, by Gross, Paul, Pages 14-19</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">NAR In Action, by Wright, Ron, Page 20</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Oscar Two Stage Sport Rocket, by Conner II, Paul, Page 21</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Television and Model Rocketry, by Shenosky, Larry, Page 22</a></li>
-</ul>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Editor's Nook, by Sadowski, Elaine, Page 5</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Roc Egglofter, by Cole, Gary, Page 9</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Section Highlights, by Blickenstaff, Jan, Page 10</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">R & D Summary A Polaroid Camroc System, by Griffith, Patrick M., Page 11</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Filly Willy Flim-flam Flyer Boost & Rocket Glider for Swift & SparroWevents, by Medina, Tony, Pages 12-13</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Filly Willy Flim-flam Flyer Boost & Rocket Glider for Swift & SparroWevents, by Medina, Tony, Pages 12-13</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Saturn V Launcher, The, by Gross, Paul, Pages 14-19</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">NAR In Action, by Wright, Ron, Page 20</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Oscar Two Stage Sport Rocket, by Conner II, Paul, Page 21</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Television and Model Rocketry, by Shenosky, Larry, Page 22</a></li>
+<li><a href="http://fake.path/1973/MR-Jan1973_V14-N1.pdf">Editor's Nook, by Sadowski, Elaine, in Model Rocketeer Jan 1973 Volume 14 Number 1, Page 4</a></li>
+<li><a href="http://fake.path/1973/MR-Jan1973_V14-N1.pdf">NAR In Action, by Unknown, in Model Rocketeer Jan 1973 Volume 14 Number 1, Page 5</a></li>
+<li><a href="http://fake.path/1973/MR-Jan1973_V14-N1.pdf">NAR News, by Unknown, in Model Rocketeer Jan 1973 Volume 14 Number 1, Pages 11, 14</a></li>
+<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Editor's Nook, by Sadowski, Elaine, in Model Rocketeer Dec 1973 Volume 15 Number 11, Page 5</a></li>
+<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Section Highlights, by Blickenstaff, Jan, in Model Rocketeer Dec 1973 Volume 15 Number 11, Page 10</a></li>
+<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">NAR In Action, by Wright, Ron, in Model Rocketeer Dec 1973 Volume 15 Number 11, Page 20</a></li>
 </ul>
 <p><h1>Competition - Boost Glider</h1></p>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Editor's Nook, by Sadowski, Elaine, Page 5</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Roc Egglofter, by Cole, Gary, Page 9</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Section Highlights, by Blickenstaff, Jan, Page 10</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">R & D Summary A Polaroid Camroc System, by Griffith, Patrick M., Page 11</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Filly Willy Flim-flam Flyer Boost & Rocket Glider for Swift & SparroWevents, by Medina, Tony, Pages 12-13</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Filly Willy Flim-flam Flyer Boost & Rocket Glider for Swift & SparroWevents, by Medina, Tony, Pages 12-13</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Saturn V Launcher, The, by Gross, Paul, Pages 14-19</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">NAR In Action, by Wright, Ron, Page 20</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Oscar Two Stage Sport Rocket, by Conner II, Paul, Page 21</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Television and Model Rocketry, by Shenosky, Larry, Page 22</a></li>
-</ul>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Editor's Nook, by Sadowski, Elaine, Page 5</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Roc Egglofter, by Cole, Gary, Page 9</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Section Highlights, by Blickenstaff, Jan, Page 10</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">R & D Summary A Polaroid Camroc System, by Griffith, Patrick M., Page 11</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Filly Willy Flim-flam Flyer Boost & Rocket Glider for Swift & SparroWevents, by Medina, Tony, Pages 12-13</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Filly Willy Flim-flam Flyer Boost & Rocket Glider for Swift & SparroWevents, by Medina, Tony, Pages 12-13</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Saturn V Launcher, The, by Gross, Paul, Pages 14-19</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">NAR In Action, by Wright, Ron, Page 20</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Oscar Two Stage Sport Rocket, by Conner II, Paul, Page 21</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Television and Model Rocketry, by Shenosky, Larry, Page 22</a></li>
+<li><a href="http://fake.path/1973/MR-Jan1973_V14-N1.pdf">Model Rocket Tips (getting under-camber on wing), by Newill, David, in Model Rocketeer Jan 1973 Volume 14 Number 1, Page 13</a></li>
+<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Filly Willy Flim-flam Flyer Boost & Rocket Glider for Swift & SparroWevents, by Medina, Tony, in Model Rocketeer Dec 1973 Volume 15 Number 11, Pages 12-13</a></li>
 </ul>
 <p><h1>Competition - Duration</h1></p>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Editor's Nook, by Sadowski, Elaine, Page 5</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Roc Egglofter, by Cole, Gary, Page 9</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Section Highlights, by Blickenstaff, Jan, Page 10</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">R & D Summary A Polaroid Camroc System, by Griffith, Patrick M., Page 11</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Filly Willy Flim-flam Flyer Boost & Rocket Glider for Swift & SparroWevents, by Medina, Tony, Pages 12-13</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Filly Willy Flim-flam Flyer Boost & Rocket Glider for Swift & SparroWevents, by Medina, Tony, Pages 12-13</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Saturn V Launcher, The, by Gross, Paul, Pages 14-19</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">NAR In Action, by Wright, Ron, Page 20</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Oscar Two Stage Sport Rocket, by Conner II, Paul, Page 21</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Television and Model Rocketry, by Shenosky, Larry, Page 22</a></li>
+<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Roc Egglofter, by Cole, Gary, in Model Rocketeer Dec 1973 Volume 15 Number 11, Page 9</a></li>
 </ul>
 <p><h1>Competition - Rocket Glider</h1></p>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Editor's Nook, by Sadowski, Elaine, Page 5</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Roc Egglofter, by Cole, Gary, Page 9</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Section Highlights, by Blickenstaff, Jan, Page 10</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">R & D Summary A Polaroid Camroc System, by Griffith, Patrick M., Page 11</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Filly Willy Flim-flam Flyer Boost & Rocket Glider for Swift & SparroWevents, by Medina, Tony, Pages 12-13</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Filly Willy Flim-flam Flyer Boost & Rocket Glider for Swift & SparroWevents, by Medina, Tony, Pages 12-13</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Saturn V Launcher, The, by Gross, Paul, Pages 14-19</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">NAR In Action, by Wright, Ron, Page 20</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Oscar Two Stage Sport Rocket, by Conner II, Paul, Page 21</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Television and Model Rocketry, by Shenosky, Larry, Page 22</a></li>
-</ul>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Editor's Nook, by Sadowski, Elaine, Page 5</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Roc Egglofter, by Cole, Gary, Page 9</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Section Highlights, by Blickenstaff, Jan, Page 10</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">R & D Summary A Polaroid Camroc System, by Griffith, Patrick M., Page 11</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Filly Willy Flim-flam Flyer Boost & Rocket Glider for Swift & SparroWevents, by Medina, Tony, Pages 12-13</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Filly Willy Flim-flam Flyer Boost & Rocket Glider for Swift & SparroWevents, by Medina, Tony, Pages 12-13</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Saturn V Launcher, The, by Gross, Paul, Pages 14-19</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">NAR In Action, by Wright, Ron, Page 20</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Oscar Two Stage Sport Rocket, by Conner II, Paul, Page 21</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Television and Model Rocketry, by Shenosky, Larry, Page 22</a></li>
+<li><a href="http://fake.path/1973/MR-Jan1973_V14-N1.pdf">Model Rocket Tips (getting under-camber on wing), by Newill, David, in Model Rocketeer Jan 1973 Volume 14 Number 1, Page 13</a></li>
+<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Filly Willy Flim-flam Flyer Boost & Rocket Glider for Swift & SparroWevents, by Medina, Tony, in Model Rocketeer Dec 1973 Volume 15 Number 11, Pages 12-13</a></li>
 </ul>
 <p><h1>Construction</h1></p>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Editor's Nook, by Sadowski, Elaine, Page 5</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Roc Egglofter, by Cole, Gary, Page 9</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Section Highlights, by Blickenstaff, Jan, Page 10</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">R & D Summary A Polaroid Camroc System, by Griffith, Patrick M., Page 11</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Filly Willy Flim-flam Flyer Boost & Rocket Glider for Swift & SparroWevents, by Medina, Tony, Pages 12-13</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Filly Willy Flim-flam Flyer Boost & Rocket Glider for Swift & SparroWevents, by Medina, Tony, Pages 12-13</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Saturn V Launcher, The, by Gross, Paul, Pages 14-19</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">NAR In Action, by Wright, Ron, Page 20</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Oscar Two Stage Sport Rocket, by Conner II, Paul, Page 21</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Television and Model Rocketry, by Shenosky, Larry, Page 22</a></li>
+<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Oscar Two Stage Sport Rocket, by Conner II, Paul, in Model Rocketeer Dec 1973 Volume 15 Number 11, Page 21</a></li>
 </ul>
 <p><h1>Contest Reports</h1></p>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Editor's Nook, by Sadowski, Elaine, Page 5</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Roc Egglofter, by Cole, Gary, Page 9</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Section Highlights, by Blickenstaff, Jan, Page 10</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">R & D Summary A Polaroid Camroc System, by Griffith, Patrick M., Page 11</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Filly Willy Flim-flam Flyer Boost & Rocket Glider for Swift & SparroWevents, by Medina, Tony, Pages 12-13</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Filly Willy Flim-flam Flyer Boost & Rocket Glider for Swift & SparroWevents, by Medina, Tony, Pages 12-13</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Saturn V Launcher, The, by Gross, Paul, Pages 14-19</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">NAR In Action, by Wright, Ron, Page 20</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Oscar Two Stage Sport Rocket, by Conner II, Paul, Page 21</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Television and Model Rocketry, by Shenosky, Larry, Page 22</a></li>
+<li><a href="http://fake.path/1973/MR-Jan1973_V14-N1.pdf">Unearthly-MARS VII Aberdeen Proving Ground, Maryland October 14-15, 1972, by Diller, Elisa, in Model Rocketeer Jan 1973 Volume 14 Number 1, Page 12</a></li>
 </ul>
 <p><h1>International Spacemodeling</h1></p>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Editor's Nook, by Sadowski, Elaine, Page 5</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Roc Egglofter, by Cole, Gary, Page 9</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Section Highlights, by Blickenstaff, Jan, Page 10</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">R & D Summary A Polaroid Camroc System, by Griffith, Patrick M., Page 11</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Filly Willy Flim-flam Flyer Boost & Rocket Glider for Swift & SparroWevents, by Medina, Tony, Pages 12-13</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Filly Willy Flim-flam Flyer Boost & Rocket Glider for Swift & SparroWevents, by Medina, Tony, Pages 12-13</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Saturn V Launcher, The, by Gross, Paul, Pages 14-19</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">NAR In Action, by Wright, Ron, Page 20</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Oscar Two Stage Sport Rocket, by Conner II, Paul, Page 21</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Television and Model Rocketry, by Shenosky, Larry, Page 22</a></li>
+<li><a href="http://fake.path/1973/MR-Jan1973_V14-N1.pdf">First World Model Rocket Championships-VRSAC '72, by Pearson, Ed, in Model Rocketeer Jan 1973 Volume 14 Number 1, Pages 6-7, 14-15</a></li>
 </ul>
 <p><h1>Manufacturers</h1></p>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Editor's Nook, by Sadowski, Elaine, Page 5</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Roc Egglofter, by Cole, Gary, Page 9</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Section Highlights, by Blickenstaff, Jan, Page 10</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">R & D Summary A Polaroid Camroc System, by Griffith, Patrick M., Page 11</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Filly Willy Flim-flam Flyer Boost & Rocket Glider for Swift & SparroWevents, by Medina, Tony, Pages 12-13</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Filly Willy Flim-flam Flyer Boost & Rocket Glider for Swift & SparroWevents, by Medina, Tony, Pages 12-13</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Saturn V Launcher, The, by Gross, Paul, Pages 14-19</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">NAR In Action, by Wright, Ron, Page 20</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Oscar Two Stage Sport Rocket, by Conner II, Paul, Page 21</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Television and Model Rocketry, by Shenosky, Larry, Page 22</a></li>
+<li><a href="http://fake.path/1973/MR-Jan1973_V14-N1.pdf">New From the Manufacturers, by Lieber, Robert, in Model Rocketeer Jan 1973 Volume 14 Number 1, Page 13</a></li>
 </ul>
 <p><h1>Other</h1></p>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Editor's Nook, by Sadowski, Elaine, Page 5</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Roc Egglofter, by Cole, Gary, Page 9</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Section Highlights, by Blickenstaff, Jan, Page 10</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">R & D Summary A Polaroid Camroc System, by Griffith, Patrick M., Page 11</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Filly Willy Flim-flam Flyer Boost & Rocket Glider for Swift & SparroWevents, by Medina, Tony, Pages 12-13</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Filly Willy Flim-flam Flyer Boost & Rocket Glider for Swift & SparroWevents, by Medina, Tony, Pages 12-13</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Saturn V Launcher, The, by Gross, Paul, Pages 14-19</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">NAR In Action, by Wright, Ron, Page 20</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Oscar Two Stage Sport Rocket, by Conner II, Paul, Page 21</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Television and Model Rocketry, by Shenosky, Larry, Page 22</a></li>
+<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Television and Model Rocketry, by Shenosky, Larry, in Model Rocketeer Dec 1973 Volume 15 Number 11, Page 22</a></li>
 </ul>
 <p><h1>Photography and Video</h1></p>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Editor's Nook, by Sadowski, Elaine, Page 5</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Roc Egglofter, by Cole, Gary, Page 9</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Section Highlights, by Blickenstaff, Jan, Page 10</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">R & D Summary A Polaroid Camroc System, by Griffith, Patrick M., Page 11</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Filly Willy Flim-flam Flyer Boost & Rocket Glider for Swift & SparroWevents, by Medina, Tony, Pages 12-13</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Filly Willy Flim-flam Flyer Boost & Rocket Glider for Swift & SparroWevents, by Medina, Tony, Pages 12-13</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Saturn V Launcher, The, by Gross, Paul, Pages 14-19</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">NAR In Action, by Wright, Ron, Page 20</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Oscar Two Stage Sport Rocket, by Conner II, Paul, Page 21</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Television and Model Rocketry, by Shenosky, Larry, Page 22</a></li>
+<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">R & D Summary A Polaroid Camroc System, by Griffith, Patrick M., in Model Rocketeer Dec 1973 Volume 15 Number 11, Page 11</a></li>
 </ul>
 <p><h1>Space History</h1></p>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Editor's Nook, by Sadowski, Elaine, Page 5</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Roc Egglofter, by Cole, Gary, Page 9</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Section Highlights, by Blickenstaff, Jan, Page 10</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">R & D Summary A Polaroid Camroc System, by Griffith, Patrick M., Page 11</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Filly Willy Flim-flam Flyer Boost & Rocket Glider for Swift & SparroWevents, by Medina, Tony, Pages 12-13</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Filly Willy Flim-flam Flyer Boost & Rocket Glider for Swift & SparroWevents, by Medina, Tony, Pages 12-13</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Saturn V Launcher, The, by Gross, Paul, Pages 14-19</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">NAR In Action, by Wright, Ron, Page 20</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Oscar Two Stage Sport Rocket, by Conner II, Paul, Page 21</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Television and Model Rocketry, by Shenosky, Larry, Page 22</a></li>
+<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Saturn V Launcher, The, by Gross, Paul, in Model Rocketeer Dec 1973 Volume 15 Number 11, Pages 14-19</a></li>
 </ul>
 <p><h1>Technical Articles</h1></p>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Editor's Nook, by Sadowski, Elaine, Page 5</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Roc Egglofter, by Cole, Gary, Page 9</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Section Highlights, by Blickenstaff, Jan, Page 10</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">R & D Summary A Polaroid Camroc System, by Griffith, Patrick M., Page 11</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Filly Willy Flim-flam Flyer Boost & Rocket Glider for Swift & SparroWevents, by Medina, Tony, Pages 12-13</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Filly Willy Flim-flam Flyer Boost & Rocket Glider for Swift & SparroWevents, by Medina, Tony, Pages 12-13</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Saturn V Launcher, The, by Gross, Paul, Pages 14-19</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">NAR In Action, by Wright, Ron, Page 20</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Oscar Two Stage Sport Rocket, by Conner II, Paul, Page 21</a></li>
-<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Television and Model Rocketry, by Shenosky, Larry, Page 22</a></li>
+<li><a href="http://fake.path/1973/MR-Jan1973_V14-N1.pdf">Technical Feature The Effect of Delayed Staging on a Multi-staged Model Rocket's Performance, by Kuechler, Thomas, in Model Rocketeer Jan 1973 Volume 14 Number 1, Pages 8-9</a></li>
 </ul>
 """
 
@@ -470,6 +292,7 @@ def output_category_html(issues, issueToIndices, headersToValues):
           str(headersToValues[titleString][index]).encode('ascii','replace')+\
           ', by ' + \
           str(headersToValues[authorString][index]).encode('ascii','replace') + \
+          ', in ' + pretty_name(issue) + \
           ', Page'
       pageNum = str(headersToValues[pageString][index]).encode('ascii','replace')
       if multiple_pages(pageNum):
@@ -577,12 +400,9 @@ class TestProcessFunctions(unittest.TestCase):
         sort_indices_chronologically([5088, 182], self.dict))
 
   def test_output_category_html(self):
-    pass
-'''
     self.assertEqual(goldCategoryString,
         output_category_html(['MR-Jan1973_V14-N1', 'MR-Dec1973_V15-N11'],
         self.issuesToIndices, self.dict))
-'''
 
 if __name__ == '__main__':
   unittest.main()
