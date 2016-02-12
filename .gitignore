@@ -1,5 +1,7 @@
 index.xlsx
 ~*.xlsx
+path.py
+*.html
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
