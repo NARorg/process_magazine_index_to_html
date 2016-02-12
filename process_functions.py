@@ -19,7 +19,7 @@ yearString = u'Year'
 topicString = u'Topic'
 titleString = u'Title'
 
-globalPath = 'http://fake.path/'
+testPath = 'http://fake.path/'
 
 nameDict = {'MR': 'Model Rocketeer'}
 
@@ -252,7 +252,7 @@ def pretty_name(issue):
   return nameDict[magName] + ' ' + month + ' ' + str(year) + ' Volume ' + \
       str(volume) + ' Number ' + str(number)
 
-def output_issue_html(issues):
+def output_issue_html(issues, globalPath):
   yearsToIssues = issues_to_year_to_issues(issues)
   sortedYears = yearsToIssues.keys()
   sortedYears.sort()
@@ -281,7 +281,7 @@ def sort_by_first_page(indices, headersToValues):
 def multiple_pages(page):
   return string.find(page, ',') != -1 or string.find(page, '-') != -1
 
-def output_article_html(issues, issueToIndices, headersToValues):
+def output_article_html(issues, issueToIndices, headersToValues, globalPath):
   yearsToIssues = issues_to_year_to_issues(issues)
   sortedYears = yearsToIssues.keys()
   sortedYears.sort()
@@ -328,7 +328,7 @@ def find_issue(index, issueToIndices):
       return issue
   return None
 
-def output_category_html(issues, issueToIndices, headersToValues):
+def output_category_html(issues, issueToIndices, headersToValues, globalPath):
   htmlString = ''
   indices = []
   for issue in issues:
@@ -361,7 +361,7 @@ def output_category_html(issues, issueToIndices, headersToValues):
     htmlString += '</ul>\n'
   return htmlString
 
-def output_author_html(issues, issueToIndices, headersToValues):
+def output_author_html(issues, issueToIndices, headersToValues, globalPath):
   htmlString = ''
   indices = []
   for issue in issues:
@@ -401,22 +401,22 @@ class TestProcessFunctions(unittest.TestCase):
     self.colCount = count_cols(self.ws)
     self.headers, self.dict = make_dict(self.ws)  
     self.issuesToIndices = gather_issues(self.headers, self.dict)
-    self.issueHtml = output_issue_html(self.issuesToIndices.keys())
+    self.issueHtml = output_issue_html(self.issuesToIndices.keys(), testPath)
     outIssueHtml = open('chronological_by_issue.html', 'w')
     outIssueHtml.write(self.issueHtml)
     outIssueHtml.close()
     self.articleHtml = output_article_html(self.issuesToIndices.keys(), 
-        self.issuesToIndices, self.dict)
+        self.issuesToIndices, self.dict, testPath)
     outArticleHtml = open('chronological_by_article.html', 'w')
     outArticleHtml.write(self.articleHtml)
     outArticleHtml.close()
     self.categoryHtml = output_category_html(self.issuesToIndices.keys(), 
-        self.issuesToIndices, self.dict)
+        self.issuesToIndices, self.dict, testPath)
     outCategoryHtml = open('category.html', 'w')
     outCategoryHtml.write(self.categoryHtml)
     outCategoryHtml.close()
     self.authorHtml = output_author_html(self.issuesToIndices.keys(), 
-        self.issuesToIndices, self.dict)
+        self.issuesToIndices, self.dict, testPath)
     outAuthorHtml = open('author.html', 'w')
     outAuthorHtml.write(self.authorHtml)
     outAuthorHtml.close()
@@ -482,12 +482,13 @@ class TestProcessFunctions(unittest.TestCase):
 
   def test_output_issue_html(self):
     self.assertEqual(goldIssueString,
-        output_issue_html(['MR-Jan1973_V14-N1', 'MR-Dec1973_V15-N11']))
+        output_issue_html(
+            ['MR-Jan1973_V14-N1', 'MR-Dec1973_V15-N11'], testPath))
 
   def test_output_article_html(self):
     self.assertEqual(goldArticleString,
         output_article_html(['MR-Jan1973_V14-N1', 'MR-Dec1973_V15-N11'],
-        self.issuesToIndices, self.dict))
+        self.issuesToIndices, self.dict, testPath))
 
   def test_sort_indices_chronologically(self):
     self.assertEqual([2062, 3057],
@@ -498,12 +499,12 @@ class TestProcessFunctions(unittest.TestCase):
   def test_output_category_html(self):
     self.assertEqual(goldCategoryString,
         output_category_html(['MR-Jan1973_V14-N1', 'MR-Dec1973_V15-N11'],
-        self.issuesToIndices, self.dict))
+        self.issuesToIndices, self.dict, testPath))
 
   def test_output_author_html(self):
     self.assertEqual(goldAuthorString,
         output_author_html(['MR-Jan1973_V14-N1', 'MR-Dec1973_V15-N11'],
-        self.issuesToIndices, self.dict))
+        self.issuesToIndices, self.dict, testPa))
 
 if __name__ == '__main__':
   unittest.main()
