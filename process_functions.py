@@ -211,8 +211,12 @@ def sort_issues(issue1, issue2):
   year2, volume2, number2 = break_issue_into_year_volume_number(issue2)
   if year1 > year2:
     return 1
+  elif year2 > year1:
+    return -1
   elif volume1 > volume2:
-    return 1    
+    return 1 
+  elif volume2 > volume1:
+    return -1   
   elif number1 > number2:
     return 1
   elif number1 == number2:
@@ -466,6 +470,7 @@ class TestProcessFunctions(unittest.TestCase):
     self.assertTrue(-1 == sort_issues('MR-Jan1973_V14-N1', 'MR-Dec1973_V15-N11'))
     self.assertTrue(0 == sort_issues('MR-Jan1973_V14-N1', 'MR-Jan1973_V14-N1'))
     self.assertTrue(1 == sort_issues('MR-Apr1973_V15-N3', 'MR-Feb1973_V15-N1'))
+    self.assertTrue(-1 == sort_issues('MR-Jan1973_V14-N12', 'MR-Dec1973_V15-N11'))
 
   def test_sort_all_issues(self):
     self.assertEqual(['MR-Jan1973_V14-N1', 'MR-Dec1973_V15-N11'], 
@@ -504,7 +509,7 @@ class TestProcessFunctions(unittest.TestCase):
   def test_output_author_html(self):
     self.assertEqual(goldAuthorString,
         output_author_html(['MR-Jan1973_V14-N1', 'MR-Dec1973_V15-N11'],
-        self.issuesToIndices, self.dict, testPa))
+        self.issuesToIndices, self.dict, testPath))
 
 if __name__ == '__main__':
   unittest.main()
