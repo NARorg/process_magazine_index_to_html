@@ -51,6 +51,31 @@ goldArticleString = """<p><h1>1973</h1></p>
 </ul>
 """
 
+goldArticleUniqueString = """<p><h1>1973</h1></p>
+<p><h2><a href="http://fake.path/1973/MR-Jan1973_V14-N1.pdf">Model Rocketeer Jan 1973 Volume 14 Number 1</a></h2></p>
+<ul><li><a href="http://fake.path/1973/MR-Jan1973_V14-N1.pdf">Editor's Nook, by Sadowski, Elaine, Page 4</a></li>
+<li><a href="http://fake.path/1973/MR-Jan1973_V14-N1.pdf">NAR In Action, by Unknown, Page 5</a></li>
+<li><a href="http://fake.path/1973/MR-Jan1973_V14-N1.pdf">First World Model Rocket Championships-VRSAC '72, by Pearson, Ed, Pages 6-7, 14-15</a></li>
+<li><a href="http://fake.path/1973/MR-Jan1973_V14-N1.pdf">Technical Feature The Effect of Delayed Staging on a Multi-staged Model Rocket's Performance, by Kuechler, Thomas, Pages 8-9</a></li>
+<li><a href="http://fake.path/1973/MR-Jan1973_V14-N1.pdf">NAR News, by Unknown, Pages 11, 14</a></li>
+<li><a href="http://fake.path/1973/MR-Jan1973_V14-N1.pdf">Unearthly-MARS VII Aberdeen Proving Ground, Maryland October 14-15, 1972, by Diller, Elisa, Page 12</a></li>
+<li><a href="http://fake.path/1973/MR-Jan1973_V14-N1.pdf">Model Rocket Tips (getting under-camber on wing), by Newill, David, Page 13</a></li>
+<li><a href="http://fake.path/1973/MR-Jan1973_V14-N1.pdf">New From the Manufacturers, by Lieber, Robert, Page 13</a></li>
+</ul>
+<p><h2><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Model Rocketeer Dec 1973 Volume 15 Number 11</a></h2></p>
+<ul><li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Editor's Nook, by Sadowski, Elaine, Page 5</a></li>
+<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Roc Egglofter, by Cole, Gary, Page 9</a></li>
+<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Section Highlights, by Blickenstaff, Jan, Page 10</a></li>
+<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">R & D Summary A Polaroid Camroc System, by Griffith, Patrick M., Page 11</a></li>
+<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Filly Willy Flim-flam Flyer Boost & Rocket Glider for Swift & SparroWevents, by Medina, Tony, Pages 12-13</a></li>
+<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Saturn V Launcher, The, by Gross, Paul, Pages 14-19</a></li>
+<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">NAR In Action, by Wright, Ron, Page 20</a></li>
+<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Oscar Two Stage Sport Rocket, by Conner II, Paul, Page 21</a></li>
+<li><a href="http://fake.path/1973/MR-Dec1973_V15-N11.pdf">Television and Model Rocketry, by Shenosky, Larry, Page 22</a></li>
+</ul>
+"""
+
+
 goldCategoryString = """<p><h1>Columns</h1></p>
 <li><a href="http://fake.path/1973/MR-Jan1973_V14-N1.pdf">Editor's Nook, by Sadowski, Elaine, in Model Rocketeer Jan 1973 Volume 14 Number 1, Page 4</a></li>
 <li><a href="http://fake.path/1973/MR-Jan1973_V14-N1.pdf">NAR In Action, by Unknown, in Model Rocketeer Jan 1973 Volume 14 Number 1, Page 5</a></li>
@@ -271,6 +296,21 @@ def output_issue_html(issues, globalPath):
 def first_page(pageString):
   return int(pageString.split('-')[0].split(',')[0])
 
+def unique_by_various(indices, headersToValues):
+  outIndices = []
+  for index in indices:
+    add = True
+    for out in outIndices:
+      match = True
+      for aString in [yearString, volumeString, numberString, titleString, authorString]:
+        if headersToValues[aString][index] != headersToValues[aString][out]:
+          match = False
+      if match:
+        add = False
+    if add:
+      outIndices.append(index)
+  return outIndices
+
 def sort_by_first_page(indices, headersToValues):
   indexPageTuples = []
   for index in indices:
@@ -296,6 +336,31 @@ def output_article_html(issues, issueToIndices, headersToValues, globalPath):
       htmlString += '<p><h2><a href="' + globalPath + str(year) + '/' + \
           issue + '.pdf">' + pretty_name(issue) + '</a></h2></p>\n<ul>'
       for index in sort_by_first_page(issueToIndices[issue], headersToValues):
+        htmlString += '<li><a href="' + globalPath + str(year) + '/' + \
+            issue + '.pdf">' + \
+            str(headersToValues[titleString][index]).encode('ascii','replace')+\
+            ', by ' + \
+            str(headersToValues[authorString][index]).encode('ascii','replace') + \
+            ', Page'
+        pageNum = str(headersToValues[pageString][index]).encode('ascii','replace')
+        if multiple_pages(pageNum):
+          htmlString += 's'
+        htmlString +=  ' ' + pageNum + '</a></li>\n'
+      htmlString += '</ul>\n'
+  return htmlString
+
+def output_article_html_unique(issues, issueToIndices, headersToValues, globalPath):
+  yearsToIssues = issues_to_year_to_issues(issues)
+  sortedYears = yearsToIssues.keys()
+  sortedYears.sort()
+  htmlString = ''
+  for year in sortedYears:
+    htmlString += '<p><h1>' + str(year) + '</h1></p>\n'
+    for issue in sort_all_issues(yearsToIssues[year]):
+      htmlString += '<p><h2><a href="' + globalPath + str(year) + '/' + \
+          issue + '.pdf">' + pretty_name(issue) + '</a></h2></p>\n<ul>'
+      firstPageSortedIndices = sort_by_first_page(issueToIndices[issue], headersToValues)
+      for index in unique_by_various(firstPageSortedIndices, headersToValues):
         htmlString += '<li><a href="' + globalPath + str(year) + '/' + \
             issue + '.pdf">' + \
             str(headersToValues[titleString][index]).encode('ascii','replace')+\
@@ -493,6 +558,14 @@ class TestProcessFunctions(unittest.TestCase):
   def test_output_article_html(self):
     self.assertEqual(goldArticleString,
         output_article_html(['MR-Jan1973_V14-N1', 'MR-Dec1973_V15-N11'],
+        self.issuesToIndices, self.dict, testPath))
+
+  def test_output_article_html(self):
+    print output_article_html_unique(
+        ['MR-Jan1973_V14-N1', 'MR-Dec1973_V15-N11'],
+        self.issuesToIndices, self.dict, testPath)
+    self.assertEqual(goldArticleUniqueString,
+        output_article_html_unique(['MR-Jan1973_V14-N1', 'MR-Dec1973_V15-N11'],
         self.issuesToIndices, self.dict, testPath))
 
   def test_sort_indices_chronologically(self):

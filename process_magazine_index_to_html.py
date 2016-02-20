@@ -28,7 +28,8 @@ issueHtml = process_functions.output_issue_html(
 outIssueHtml = open('chronological_by_issue.html', 'w')
 outIssueHtml.write(issueHtml)
 outIssueHtml.close()
-articleHtml = process_functions.output_article_html(issuesToIndices.keys(),
+articleHtml = process_functions.output_article_html_unique(
+    issuesToIndices.keys(),
     issuesToIndices, dict, path.globalPath)
 outArticleHtml = open('chronological_by_article.html', 'w')
 outArticleHtml.write(articleHtml)
